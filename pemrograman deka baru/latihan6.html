@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi Date</title>
+</head>
+<body>
+    <script>
+        var waktu = new Date ();
+        document.write(waktu);
+    document.write("<br>");
+        var jam = waktu.getHours();
+        var menit = waktu.getMinutes();
+        document.write(jam);
+        document.write(":"+menit);
+        document.write("<br>");
+        if (jam<=9) {
+            document.write("Good Morning Ciss");
+        }else if (jam <=14) {
+            document.write("Selamat Makan");
+
+        }else if (jam <=18) {
+            document.write("Selamat Sore");
+        }else{
+            document.write("selamat bobo mantan");
+        }
+        document.write("<br>");
+        var namaHari
+        = new Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis","Jum'at", "Sabtu");
+        document.write(namaHari[2]);
+        document.write("<br>");
+        var hari = waktu.getDay();
+        //document.write(hari);
+        document.write(namaHari[hari]);
+
+
+        var namaBulan = new Array("january", "february", "maret", "april", "mei","juni", "july", "Agustus", "September", "Oktober", "November", "Desember");
+        document.write("<br>");
+        //var bulan = waktu.getMonth();
+        document.write(namaBulan[2]);
+        var tgl = waktu.getDate();
+        document.write(tgl);
+        var tahun = waktu.getFullYear();
+       </script>
+
+</body>
+</html>
